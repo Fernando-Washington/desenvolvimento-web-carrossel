@@ -1,0 +1,104 @@
+@font-face {
+    font-family: 'Matrix';
+    src: url('../assets/font/matrix.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --bg-color: rgba(0, 0, 0, 0.8);
+    --font-color: #11A249;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background-image: url('../assets/image/rain-code.jpg');
+    background-color: var(--bg-color);
+    background-blend-mode: multiply;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-container {
+    font-family: 'Matrix', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.text-container > h1 {
+    font-size: 4rem;
+    text-shadow: 
+        0 0 1px #000000,  
+        0 0 5px #000000,  
+        0 0 5px #62D90D,   
+        0 0 8px #62D90D, 
+        0 0 8px #62D90D; 
+    color: var(--font-color);
+}
+
+.text-container > img{
+    width: 320px;
+}
+
+.img-container, .img-1, .img-2, .img-3 {
+    transition: 0.2s ease-in-out;
+    border-radius: 8px;
+    width: 70%;
+    height: 70%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    background-size: cover;
+}
+
+.img-1 {
+    background-image: url('../assets/image/thomas-anderson.jpg');
+}
+.img-2 {
+    background-image: url('../assets/image/neo-pill.jpeg');
+}
+.img-3 {
+    background-image: url('../assets/image/wake-up-neo.jpeg');
+}
+
+.btn-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.btn-container:hover 
+.btn {
+    display: block;
+}
+
+.btn {
+    display: none;
+    padding: 1rem 2rem;
+    border: none;
+    background-color: #cccccc91;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.btn:active {
+    transform: scale(0.95);
+}
